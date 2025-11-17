@@ -9,7 +9,7 @@ include(CMakeDependentOption)
 # Application Metadata
 # ============================================================================
 
-set(QGC_APP_NAME "QGroundControl" CACHE STRING "Application name")
+set(QGC_APP_NAME "RGC" CACHE STRING "Application name")
 set(QGC_APP_COPYRIGHT "Copyright (c) 2025 QGroundControl. All rights reserved." CACHE STRING "Copyright notice")
 set(QGC_APP_DESCRIPTION "Open Source Ground Control App" CACHE STRING "Application description")
 set(QGC_ORG_NAME "QGroundControl" CACHE STRING "Organization name")
