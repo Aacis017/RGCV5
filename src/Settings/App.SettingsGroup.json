@@ -9,7 +9,7 @@
     "type":             "uint32",
     "enumStrings":      "ArduPilot,PX4 Pro,Mavlink Generic",
     "enumValues":       "3,12,0",
-    "default":     12
+    "default":     3
 },
 {
     "name":             "offlineEditingVehicleClass",
@@ -34,7 +34,7 @@
     "shortDesc": "Offline editing hover speed",
     "longDesc":  "This value defines the default speed for calculating mission statistics for multi-rotor vehicles or VTOL vehicle in multi-rotor mode. It does not modify the flight speed for a specific flight plan.",
     "type":             "double",
-    "default":     5.0,
+    "default":     3.0,
     "min":              1.0,
     "units":            "m/s",
     "decimalPlaces":    2
@@ -74,7 +74,7 @@
     "shortDesc": "Default value for altitude",
     "longDesc":  "This value specifies the default altitude for new items added to a mission.",
     "type":             "double",
-    "default":     50.0,
+    "default":     4.0,
     "min":              0.0,
     "units":            "m",
     "decimalPlaces":    1

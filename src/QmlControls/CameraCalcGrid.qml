@@ -126,11 +126,11 @@ Column {
             Layout.fillWidth:           true
         }
 
-        QGCLabel { text: frontalDistanceLabel }
-        FactTextField {
-            Layout.fillWidth:   true
-            fact:               cameraCalc.adjustedFootprintFrontal
-        }
+        // QGCLabel { text: frontalDistanceLabel }
+        // FactTextField {
+        //     Layout.fillWidth:   true
+        //     fact:               cameraCalc.adjustedFootprintFrontal
+        // }
 
         QGCLabel { text: sideDistanceLabel }
         FactTextField {

@@ -995,7 +995,7 @@
             "category":             "Camera",
             "param1": {
                 "label":            "Distance",
-                "default":          25,
+                "default":          5,
                 "units":            "m",
                 "decimalPlaces":    2,
                 "min":              0
