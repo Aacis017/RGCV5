@@ -68,6 +68,10 @@
         <file alias="BatteryOrange.svg">src/UI/toolbar/Images/BatteryOrange.svg</file>
         <file alias="BatteryCritical.svg">src/UI/toolbar/Images/BatteryCritical.svg</file>
         <file alias="BatteryEMERGENCY.svg">src/UI/toolbar/Images/BatteryEMERGENCY.svg</file>
+        <file alias="gallon_green.svg">src/UI/toolbar/Images/gallon_green.svg</file>
+        <file alias="gallon_orange.svg">src/UI/toolbar/Images/gallon_orange.svg</file>
+        <file alias="gallon_red.svg">src/UI/toolbar/Images/gallon_red.svg</file>
+        <file alias="gallon_empty.svg">src/UI/toolbar/Images/gallon_empty.svg</file>
         <file alias="camera.svg">resources/camera.svg</file>
         <file alias="camera_photo.svg">src/Camera/images/camera_photo.svg</file>
         <file alias="camera_video.svg">src/Camera/images/camera_video.svg</file>

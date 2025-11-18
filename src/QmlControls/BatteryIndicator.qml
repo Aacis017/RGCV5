@@ -242,6 +242,38 @@ Item {
             }    
 
             function getBatterySvgSource() {
+                if (batteryIndex === 1) {
+                            switch (battery.chargeState.rawValue) {
+                                case MAVLink.MAV_BATTERY_CHARGE_STATE_OK:
+                                    if (!isNaN(battery.percentRemaining.rawValue)) {
+                                        if (battery.percentRemaining.rawValue > 75) {
+                                            return "/qmlimages/gallon_green.svg"
+                                        } else if (battery.percentRemaining.rawValue > 40) {
+                                            return "/qmlimages/gallon_orange.svg"
+                                        } else if (battery.percentRemaining.rawValue > 10) {
+                                            return "/qmlimages/gallon_red.svg"
+                                        } else {
+                                            return "/qmlimages/gallon_empty.svg"
+                                        }
+                                    } else {
+                                        return "/qmlimages/gallon_empty.svg"
+                                    }
+
+                                case MAVLink.MAV_BATTERY_CHARGE_STATE_LOW:
+                                    return "/qmlimages/gallon_red.svg"
+
+                                case MAVLink.MAV_BATTERY_CHARGE_STATE_CRITICAL:
+                                    return "/qmlimages/gallon_empty.svg"
+
+                                case MAVLink.MAV_BATTERY_CHARGE_STATE_EMERGENCY:
+                                case MAVLink.MAV_BATTERY_CHARGE_STATE_FAILED:
+                                case MAVLink.MAV_BATTERY_CHARGE_STATE_UNHEALTHY:
+                                    return "/qmlimages/gallon_empty.svg"
+
+                                default:
+                                    return "/qmlimages/gallon_empty.svg"
+                            }
+                        }
                 switch (battery.chargeState.rawValue) {
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_OK:
                         if (!isNaN(battery.percentRemaining.rawValue)) {
@@ -390,6 +422,7 @@ Item {
                         sourceComponent:    batteryValuesAvailableComponent
 
                         property var battery: object
+                        property int batteryIndex: index
                     }
 
                     LabelledLabel {

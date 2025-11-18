@@ -89,7 +89,7 @@ Rectangle {
                 QGCToolBarButton {
                     id:                 qgcButton
                     Layout.fillHeight:  true
-                    icon.source:        "/res/QGCLogoFull.svg"
+                    icon.source:        "/res/resources/robotixjapanlogo.png"
                     logo:               true
                     onClicked:          mainWindow.showToolSelectDialog()
                 }
